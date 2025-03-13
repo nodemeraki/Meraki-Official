@@ -1,10 +1,10 @@
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
-import "./Header.css";
-import logo from "/src/assets/logo.png";
-import Facebook from "/src/assets/dark-icons/Facebook.png";
-import LinkedIN from "/src/assets/dark-icons/linkedin-dark.png";
-import Instagram from "/src/assets/dark-icons/Instagram-dark.png";
-import Twitter from "/src/assets/dark-icons/Twitter-dark.png";
+import logo from "/src/assets/home-img/logo.png";
+import Facebook from "/src/assets/home-img/Facebook.png";
+import LinkedIN from "/src/assets/home-img/linkedin-dark.png";
+import Instagram from "/src/assets/home-img/Instagram-dark.png";
+import Twitter from "/src/assets/home-img/Twitter-dark.png";
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -14,55 +14,91 @@ function Header() {
   };
 
   return (
-    <header className="header">
-      <nav>
-        <div className="logo-container">
-          <img src={logo} alt="logo" className="logo" />
+    <header className="bg-body text-white pt-5 pb-4 px-11">
+      <nav className="w-[91.5vw] flex items-center justify-between">
+        {/* Logo */}
+        <div className="flex items-center">
+          <img src={logo} alt="logo" className="h-12 ml-7.5" />
         </div>
 
-        {/* Hamburger Icon for Mobile */}
-        <div className="hamburger" onClick={toggleMobileMenu}>
+        {/* Hamburger Menu (Mobile) */}
+        <div
+          className="md:hidden cursor-pointer text-white bg-primary text-2xl py-1 px-1.5"
+          onClick={toggleMobileMenu}
+        >
           ☰
         </div>
 
-        {/* Navigation Menu */}
+        {/* Navigation Links */}
         <ul
-          className={isMobileMenuOpen ? "nav-links mobile-active" : "nav-links"}
+          className={`absolute md:static top-16 right-6 md:bg-transparent md:flex md:items-center md:space-x-6 transition-all duration-300 ease-in-out z-50 rounded-lg md:rounded-none md:py-0 bg-white ${
+            isMobileMenuOpen ? "block" : "hidden"
+          }`}
         >
-          <div className="mobile-header">
-            <p>Crafting Excellence </p>
+          <div className="md:hidden text-white bg-primary w-full text-center italic py-8">
+            <p>Crafting Excellence</p>
             <p>in Every Byte</p>
           </div>
-          <li>
-            <a href="/">Home</a>
+          <li className="text-center">
+            <li>
+              <Link to="/" className="text-black block py-2 hover:text-primary">
+                Home
+              </Link>
+            </li>
           </li>
-          <li>
-            <a href="/about">About</a>
+          <li className="text-center">
+            <Link
+              to="/service"
+              className="text-black block py-2 md:py-0 hover:text-primary"
+            >
+              Services
+            </Link>
           </li>
-          <li>
-            <a href="/services">Services</a>
+          <li className="text-center">
+            <a
+              href="/portfolio"
+              className="text-black block py-2 md:py-0 hover:text-primary"
+            >
+              Portfolio
+            </a>
           </li>
-          <li>
-            <a href="/portfolio">Portfolio</a>
+          <li className="text-center">
+            <li>
+              <Link
+                to="/about"
+                className="text-black block py-2 md:py-0 hover:text-primary"
+              >
+                About Us
+              </Link>
+            </li>
           </li>
-          <li>
-            <a href="/contact" className="navContact">
+          <li className="text-center">
+            <a
+              href="/contact"
+              className="text-black block py-2 md:py-0 hover:text-primary"
+            >
               Contact
             </a>
           </li>
-          <button className="request-quote-btn">Request a Quote</button>
-          <div className="social-icons">
+
+          {/* Request Quote Button */}
+          <button className="bg-primary  text-white px-4 py-2 rounded-lg hover:cursor-pointer">
+            Request a Quote
+          </button>
+
+          {/* Social Media Icons (Mobile Only) */}
+          <div className="flex justify-center space-x-4 mt-4 mb-6 md:hidden">
             <a href="#">
-              <img src={Facebook} alt="logo" className="icon" />
+              <img src={Facebook} alt="Facebook" className="w-6" />
             </a>
             <a href="#">
-              <img src={LinkedIN} alt="logo" className="icon" />
+              <img src={LinkedIN} alt="LinkedIn" className="w-6" />
             </a>
             <a href="#">
-              <img src={Instagram} alt="logo" className="icon" />
+              <img src={Instagram} alt="Instagram" className="w-6" />
             </a>
             <a href="#">
-              <img src={Twitter} alt="logo" className="icon" />
+              <img src={Twitter} alt="Twitter" className="w-6" />
             </a>
           </div>
         </ul>

@@ -1,81 +1,69 @@
 import React from "react";
-import "./Footer.css";
-import Facebook from "/src/assets/icons/Facebook_white.png";
-import LinkedIN from "/src/assets/icons/LinkedIN.png";
-import Instagram from "/src/assets/icons/Instagram.png";
-import Twitter from "/src/assets/icons/Twitter.png";
+import Facebook from "/src/assets/home-img/Facebook_white.png";
+import LinkedIn from "/src/assets/home-img/LinkedIN.png";
+import Instagram from "/src/assets/home-img/Instagram.png";
+import Twitter from "/src/assets/home-img/Twitter.png";
+import FooterBg from "/src/assets/home-img/footer.png";
 
 function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-container">
+    <footer
+      className="text-white py-12 bg-cover bg-center"
+      style={{ backgroundImage: `url(${FooterBg})` }}
+    >
+      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row gap-12">
         {/* Our Focus Section */}
-        <div className="footer-section">
-          <h3 class="italic-text">Our focus</h3>
-          <div className="ourfocus-paragraph">
+        <div className="flex-1 ml-7">
+          <h3 className="text-xl mb-4">Our Focus</h3>
+          <p className="text-sm leading-relaxed mb-4">
             We have much planned for the future, working with great minds and
             clients.
-          </div>
-          <p>
-            <strong>+234057005399</strong>
           </p>
-          <p className="info-footer">info@merakinode.com</p>
-          <div className="footer-social-icons">
+          <p className="font-bold text-lg">+234057005399</p>
+          <p className="hover:underline cursor-pointer">info@merakinode.com</p>
+          {/* Social Media Icons */}
+          <div className="mt-4">
             <p>Follow Us:</p>
-            <div className="icons-padding ">
-              <img src={Facebook} alt="logo" className="icon" />
-              <img src={LinkedIN} alt="logo" className="icon" />
-              <img src={Instagram} alt="logo" className="icon" />
-              <img src={Twitter} alt="logo" className="icon" />
+            <div className="flex space-x-3 mt-2">
+              <img src={Facebook} alt="Facebook" className="w-5 h-5 cursor-pointer hover:scale-110 transition" />
+              <img src={LinkedIn} alt="LinkedIn" className="w-5 h-5 cursor-pointer hover:scale-110 transition" />
+              <img src={Instagram} alt="Instagram" className="w-5 h-5 cursor-pointer hover:scale-110 transition" />
+              <img src={Twitter} alt="Twitter" className="w-5 h-5 cursor-pointer hover:scale-110 transition" />
             </div>
           </div>
         </div>
 
         {/* Quick Links Section */}
-        <div className="footer-section footer-section-quick">
-          <h3 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Quick link
-          </h3>
-          <ul>
+        <div className="flex-1 text-center ml-24 md:text-left">
+          <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+          <ul className="space-y-2 text-sm">
             <li>
-              <a href="/services">Services</a>
+              <a href="/services" className="hover:text-primary transition">Services</a>
             </li>
             <li>
-              <a href="/portfolio">Portfolio</a>
+              <a href="/portfolio" className="hover:text-primary transition">Portfolio</a>
             </li>
             <li>
-              <a href="/about">About Us</a>
+              <a href="/about" className="hover:text-primary transition">About Us</a>
             </li>
             <li>
-              <a href="/contact">Contact Us</a>
+              <a href="/contact" className="hover:text-primary transition">Contact Us</a>
             </li>
           </ul>
         </div>
 
-        {/* Business Hour Section */}
-        <div className="footer-section footer-section-business">
-          <h3>Business Hour</h3>
-          <p>
-            <strong>Monday</strong> 9:00 am - 7:00 pm
-          </p>
-          <p>
-            <strong>Tuesday</strong> 9:00 am - 7:00 pm
-          </p>
-          <p>
-            <strong>Wednesday</strong> 9:00 am - 7:00 pm
-          </p>
-          <p>
-            <strong>Thursday</strong> 9:00 am - 7:00 pm
-          </p>
-          <p>
-            <strong>Friday</strong> 9:00 am - 7:00 pm
-          </p>
-          <p>
-            <strong>Saturday</strong> 9:00 am - 2:00 pm
-          </p>
-          <p>
-            <strong>Sunday</strong> Closed
-          </p>
+        {/* Business Hours Section */}
+        <div className="flex-1">
+          <h3 className="text-xl font-semibold mb-4">Business Hours</h3>
+          <div className="text-sm space-y-2">
+            <p><strong>Monday:</strong> 9:00 am - 7:00 pm</p>
+            <p><strong>Tuesday:</strong> 9:00 am - 7:00 pm</p>
+            <p><strong>Wednesday:</strong> 9:00 am - 7:00 pm</p>
+            <p><strong>Thursday:</strong> 9:00 am - 7:00 pm</p>
+            <p><strong>Friday:</strong> 9:00 am - 7:00 pm</p>
+            <p><strong>Saturday:</strong> 9:00 am - 2:00 pm</p>
+            <p><strong>Sunday:</strong> Closed</p>
+          </div>
         </div>
       </div>
     </footer>
