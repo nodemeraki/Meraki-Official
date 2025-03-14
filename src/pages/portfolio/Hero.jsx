@@ -1,24 +1,15 @@
-import heroImage from "./assets/hero.png";
-import heroMobile from "./assets/hero-mobile.png";
+import heroImage from "../../assets/portfolio/hero.png";
+import heroMobile from "../../assets/portfolio/hero-mobile.png";
 const Hero = () => {
   return (
     <section>
       <div className="w-full relative">
-        {/* Desktop image */}
-        <img
-          className="h-full hidden xl:block"
-          src={heroImage}
-          alt="Hero Image"
-        />
+        <picture>
+          <source media="(min-width: 1280px)" srcSet={heroImage} />
+          <img className="h-full w-full" src={heroMobile} alt="Hero Image" />
+        </picture>
 
-        {/* mobile image */}
-        <img
-          className="h-full block xl:hidden"
-          src={heroMobile}
-          alt="Hero Image"
-        />
-
-        <h1 className="hidden absolute inset-0 xl:flex items-center justify-center font-extrabold text-[#0F0D0D] text-[52px] leading-[57px] tracking-[7%]">
+        <h1 className="absolute inset-0 flex items-center justify-center font-extrabold text-[#0F0D0D] text-4xl md:text-[52px] leading-[57px] tracking-[7%]">
           Our work
         </h1>
       </div>

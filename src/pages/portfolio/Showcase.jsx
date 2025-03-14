@@ -1,12 +1,13 @@
 import { useState } from "react";
-import ServiceButtons from "../../Component/ServiceButtons";
+import ServiceButtons from "../../components/ServiceButtons";
 
-import brandStrategy from "./assets/brand.png";
-import design from "./assets/design.png";
-import development from "./assets/development.png";
-import writing from "./assets/technical-writing.png";
-import graphics from "./assets/motion-graphic.png";
-import marketing from "./assets/marketing.png";
+// import brandStrategy from "../assets/portfolio/brand.png";
+import brandStrategy from "../../assets/portfolio/brand.png";
+import design from "../../assets/portfolio/design.png";
+import development from "../../assets/portfolio/development.png";
+import writing from "../../assets/portfolio/technical-writing.png";
+import graphics from "../../assets/portfolio/motion-graphic.png";
+import marketing from "../../assets/portfolio/marketing.png";
 
 const Showcase = () => {
   // Define categories
@@ -55,7 +56,7 @@ const Showcase = () => {
       />
 
       {/* Image Showcase */}
-      <div className="grid grid-cols-1 xl:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:items-center sm:justify-center w-full container sm:mx-auto">
         {filteredImages.map((image, index) => (
           <div
             key={index}
