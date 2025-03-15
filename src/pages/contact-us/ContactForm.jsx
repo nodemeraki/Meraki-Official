@@ -10,7 +10,6 @@ const ContactForm = () => {
           lastName: "",
           email: "",
           phone: "",
-          subject: "",
           message: "",
         }}
         validationSchema={Yup.object({
@@ -28,9 +27,6 @@ const ContactForm = () => {
           phone: Yup.string()
             .matches(/^\d{10,15}$/, "Invalid phone number")
             .required("Phone number is required"),
-          subject: Yup.string()
-            .min(3, "Subject must be at least 3 characters")
-            .required("Subject is required"),
           message: Yup.string()
             .min(10, "Message must be at least 10 characters")
             .required("Message is required"),
@@ -43,7 +39,7 @@ const ContactForm = () => {
         }}
       >
         {({ isSubmitting }) => (
-          <Form className="max-w-[925px] min-h-[1014px] mx-auto flex flex-col justify-between gap-2.5 my-14 px-7">
+          <Form className="max-w-[925px] mx-auto flex flex-col gap-7 my-14 px-7">
             {/* first name */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
@@ -116,7 +112,7 @@ const ContactForm = () => {
                   htmlFor="tel-num"
                   className="block font-light text-[21px] leading-[24.61px] mb-2"
                 >
-                  PHONE
+                  Phone Number
                 </label>
                 <Field
                   type="text"
@@ -132,27 +128,6 @@ const ContactForm = () => {
                 />
               </div>
             </div>
-            {/* subject */}
-            <div>
-              <label
-                htmlFor="subject"
-                className="block font-light text-[21px] leading-[24.61px] mb-2"
-              >
-                SUBJECT
-              </label>
-              <Field
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="Subject"
-                className="border border-[#044358] px-2.5 max-w-[922px] w-full min-h-[78px]"
-              />
-              <ErrorMessage
-                name="subject"
-                component="span"
-                className="text-red-700"
-              />
-            </div>
 
             {/* message */}
             <div>
@@ -160,7 +135,7 @@ const ContactForm = () => {
                 htmlFor="user-message"
                 className="block font-light text-[21px] leading-[24.61px] mb-2"
               >
-                MESSAGE
+                Message
               </label>
               <Field
                 as="textarea"

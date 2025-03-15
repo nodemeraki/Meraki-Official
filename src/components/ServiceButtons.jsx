@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const ServiceButtons = ({ services, selectedService, onSelect }) => {
   return (
-    <ul className="w-full max-w-[1263px] h-[78px]  grid grid-cols-3 xl:grid-cols-5 items-center justify-center gap-3.5 my-7">
+    <ul className="w-full max-w-[1263px] h-[78px]  grid grid-cols-3 xl:grid-cols-6 items-center justify-center gap-3.5 my-7">
       {services.map((service, index) => (
         <li
           key={index}

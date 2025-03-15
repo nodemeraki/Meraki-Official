@@ -1,10 +1,15 @@
+import Header from "/src/components/Header/Header";
+import Footer from "/src/components/Footer/Footer";
 import Hero from "./Hero";
 import Showcase from "./Showcase";
+
 const Portfolio = () => {
   return (
-    <main className="mx-auto mt-5 mb-16 px-4 w-full font-[Lato] container">
+    <main>
+      <Header />
       <Hero />
       <Showcase />
+      <Footer />
     </main>
   );
 };
