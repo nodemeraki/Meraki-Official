@@ -1,4 +1,3 @@
-import React from "react";
 import HeroIm from "/src/assets/about-img/caroze 1.png";
 
 function HeroSection() {

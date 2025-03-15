@@ -1,4 +1,15 @@
-import React from "react";
+// import './Footer.css';
+
+// const Footer = () => {
+//   return (
+//     <footer className="footer">
+//       <p>&copy; 2023 Your Company Name. All Rights Reserved.</p>
+//     </footer>
+//   );
+// };
+
+// export default Footer;
+
 import Facebook from "/src/assets/home-img/Facebook_white.png";
 import LinkedIn from "/src/assets/home-img/LinkedIN.png";
 import Instagram from "/src/assets/home-img/Instagram.png";
@@ -71,3 +82,4 @@ function Footer() {
 }
 
 export default Footer;
+
