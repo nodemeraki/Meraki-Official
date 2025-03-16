@@ -1,5 +1,8 @@
 import { useState, useEffect, useCallback } from "react";
 
+// import ChevronLeft from "lucide-react";
+// import ChevronRight from "lucide-react";
+
 import MockImg from "/src/assets/project-case-study/mockup.png";
 import SolutionImg from "/src/assets/project-case-study/solution.png";
 import ImgOne from "/src/assets/project-case-study/flyerArtboard-1.png";

@@ -1,27 +1,3 @@
-// import "./Header.css";
-
-// const Header = () => {
-//   return (
-//     <header className="header">
-//       <nav>
-//         <ul>
-//           <li>
-//             <a href="/">Home</a>
-//           </li>
-//           <li>
-//             <a href="/about">About</a>
-//           </li>
-//           <li>
-//             <a href="/services">Services</a>
-//           </li>
-//           <li>
-//             <a href="/portfolio">Portfolio</a>
-//           </li>
-//           <li>
-//             <a href="/contact">Contact</a>
-//           </li>
-//           <button className="request-quote-btn">Request a Quote</button>
-
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import logo from "/src/assets/home-img/logo.png";
@@ -64,11 +40,9 @@ function Header() {
             <p>in Every Byte</p>
           </div>
           <li className="text-center">
-            <li>
-              <Link to="/" className="text-black block py-2 hover:text-primary">
-                Home
-              </Link>
-            </li>
+            <Link to="/" className="text-black block py-2 hover:text-primary">
+              Home
+            </Link>
           </li>
           <li className="text-center">
             <Link
@@ -79,30 +53,28 @@ function Header() {
             </Link>
           </li>
           <li className="text-center">
-            <a
+            <Link
               href="/portfolio"
               className="text-black block py-2 md:py-0 hover:text-primary"
             >
               Portfolio
-            </a>
+            </Link>
           </li>
           <li className="text-center">
-            <li>
-              <Link
-                to="/about"
-                className="text-black block py-2 md:py-0 hover:text-primary"
-              >
-                About Us
-              </Link>
-            </li>
+            <Link
+              to="/about"
+              className="text-black block py-2 md:py-0 hover:text-primary"
+            >
+              About Us
+            </Link>
           </li>
           <li className="text-center">
-            <a
+            <Link
               href="/contact"
               className="text-black block py-2 md:py-0 hover:text-primary"
             >
               Contact
-            </a>
+            </Link>
           </li>
 
           {/* Request Quote Button */}

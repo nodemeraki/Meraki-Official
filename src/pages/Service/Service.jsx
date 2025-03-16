@@ -1,7 +1,8 @@
-import Header from "/src/components/Header/Header";
+import Header from "/src/components/Header";
 import Servhero from "/src/pages/Service/Servhero/Servhero";
 import Brand from "/src/pages/Service/Brand/Brand";
-import Footer from "/src/components/Footer/Footer";
+import ServiceSelect from "./ServSelection/ServiceSelect";
+import Footer from "/src/components/Footer";
 
 function Service() {
   return (
@@ -9,6 +10,7 @@ function Service() {
       <Header />
       <Servhero />
       <Brand />
+      <ServiceSelect />
       <Footer />
     </>
   );

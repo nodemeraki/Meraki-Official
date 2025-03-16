@@ -1,11 +1,11 @@
-import Header from "/src/components/Header/Header";
-import Footer from "/src/components/Footer/Footer";
+import Header from "/src/components/Header";
+import Footer from "/src/components/Footer";
 import ContactHeader from "./ContactHeader";
 import ContactForm from "./ContactForm";
 
 const ContactUs = () => {
   return (
-    <section>
+    <section className="bg-body">
       <Header />
       <ContactHeader />
       <ContactForm />

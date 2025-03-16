@@ -1,15 +1,3 @@
-// import './Footer.css';
-
-// const Footer = () => {
-//   return (
-//     <footer className="footer">
-//       <p>&copy; 2023 Your Company Name. All Rights Reserved.</p>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
-
 import Facebook from "/src/assets/home-img/Facebook_white.png";
 import LinkedIn from "/src/assets/home-img/LinkedIN.png";
 import Instagram from "/src/assets/home-img/Instagram.png";
@@ -36,10 +24,26 @@ function Footer() {
           <div className="mt-4">
             <p>Follow Us:</p>
             <div className="flex space-x-3 mt-2">
-              <img src={Facebook} alt="Facebook" className="w-5 h-5 cursor-pointer hover:scale-110 transition" />
-              <img src={LinkedIn} alt="LinkedIn" className="w-5 h-5 cursor-pointer hover:scale-110 transition" />
-              <img src={Instagram} alt="Instagram" className="w-5 h-5 cursor-pointer hover:scale-110 transition" />
-              <img src={Twitter} alt="Twitter" className="w-5 h-5 cursor-pointer hover:scale-110 transition" />
+              <img
+                src={Facebook}
+                alt="Facebook"
+                className="w-5 h-5 cursor-pointer hover:scale-110 transition"
+              />
+              <img
+                src={LinkedIn}
+                alt="LinkedIn"
+                className="w-5 h-5 cursor-pointer hover:scale-110 transition"
+              />
+              <img
+                src={Instagram}
+                alt="Instagram"
+                className="w-5 h-5 cursor-pointer hover:scale-110 transition"
+              />
+              <img
+                src={Twitter}
+                alt="Twitter"
+                className="w-5 h-5 cursor-pointer hover:scale-110 transition"
+              />
             </div>
           </div>
         </div>
@@ -49,16 +53,24 @@ function Footer() {
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="/services" className="hover:text-primary transition">Services</a>
+              <a href="/services" className="hover:text-primary transition">
+                Services
+              </a>
             </li>
             <li>
-              <a href="/portfolio" className="hover:text-primary transition">Portfolio</a>
+              <a href="/portfolio" className="hover:text-primary transition">
+                Portfolio
+              </a>
             </li>
             <li>
-              <a href="/about" className="hover:text-primary transition">About Us</a>
+              <a href="/about" className="hover:text-primary transition">
+                About Us
+              </a>
             </li>
             <li>
-              <a href="/contact" className="hover:text-primary transition">Contact Us</a>
+              <a href="/contact" className="hover:text-primary transition">
+                Contact Us
+              </a>
             </li>
           </ul>
         </div>
@@ -67,13 +79,27 @@ function Footer() {
         <div className="flex-1">
           <h3 className="text-xl font-semibold mb-4">Business Hours</h3>
           <div className="text-sm space-y-2">
-            <p><strong>Monday:</strong> 9:00 am - 7:00 pm</p>
-            <p><strong>Tuesday:</strong> 9:00 am - 7:00 pm</p>
-            <p><strong>Wednesday:</strong> 9:00 am - 7:00 pm</p>
-            <p><strong>Thursday:</strong> 9:00 am - 7:00 pm</p>
-            <p><strong>Friday:</strong> 9:00 am - 7:00 pm</p>
-            <p><strong>Saturday:</strong> 9:00 am - 2:00 pm</p>
-            <p><strong>Sunday:</strong> Closed</p>
+            <p>
+              <strong>Monday:</strong> 9:00 am - 7:00 pm
+            </p>
+            <p>
+              <strong>Tuesday:</strong> 9:00 am - 7:00 pm
+            </p>
+            <p>
+              <strong>Wednesday:</strong> 9:00 am - 7:00 pm
+            </p>
+            <p>
+              <strong>Thursday:</strong> 9:00 am - 7:00 pm
+            </p>
+            <p>
+              <strong>Friday:</strong> 9:00 am - 7:00 pm
+            </p>
+            <p>
+              <strong>Saturday:</strong> 9:00 am - 2:00 pm
+            </p>
+            <p>
+              <strong>Sunday:</strong> Closed
+            </p>
           </div>
         </div>
       </div>
@@ -82,4 +108,3 @@ function Footer() {
 }
 
 export default Footer;
-

@@ -6,7 +6,6 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 import ProjectCaseStudy from "./pages/ProjectCaseStudy/ProjectCaseStudy";
 import ContactUs from "./pages/Contact-us/ContactUs";
 import "./index.css";
-import "./App.css";
 
 function App() {
   return (

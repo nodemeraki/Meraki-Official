@@ -1,11 +1,11 @@
-import Header from "/src/components/Header/Header";
-import Footer from "/src/components/Footer/Footer";
+import Header from "/src/components/Header";
+import Footer from "/src/components/Footer";
 import Hero from "./Hero";
 import Showcase from "./Showcase";
 
 const Portfolio = () => {
   return (
-    <main>
+    <main className="bg-body">
       <Header />
       <Hero />
       <Showcase />

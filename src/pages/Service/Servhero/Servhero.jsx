@@ -2,9 +2,9 @@ import HeroIm from "/src/assets/service-img/caroze 1.png";
 
 function Servhero() {
   return (
-    <section className="h-[75vh] bg-body">
+    <section className="bg-body">
       <div
-        className="h-[70vh] w-[90vw] m-auto rounded-sm overflow-hidden bg-cover bg-center flex items-center justify-center"
+        className="min-h-[80vh] w-[90%] mx-auto rounded-sm bg-cover flex items-center justify-center"
         style={{ backgroundImage: `url(${HeroIm})` }}
       >
         <h2
@@ -12,7 +12,7 @@ function Servhero() {
           style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.38)" }}
         >
           we offer
-          <span className="text-[#F96662] capitalize"> professional</span>{" "}
+          <span className="text-[#F96662] capitalize"> professional</span>
           services
         </h2>
       </div>
