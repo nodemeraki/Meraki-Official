@@ -1,5 +1,3 @@
-import React from "react";
-
 function base() {
   return (
     <section className="bg-body py-5 flex justify-center items-center">

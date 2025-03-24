@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+// import { useState } from "react";
 import logo from "/src/assets/home-img/logo.png";
 import Facebook from "/src/assets/home-img/Facebook.png";
 import LinkedIN from "/src/assets/home-img/linkedin-dark.png";
@@ -51,10 +52,11 @@ function Header() {
             <p>in Every Byte</p>
           </div>
           <li className="text-center">
-            <Link
+            {/* <Link
               to="/"
               className="text-black block pt-2 pb-2 hover:text-primary"
-            >
+            > */}
+            <Link to="/" className="text-black block py-2 hover:text-primary">
               Home
             </Link>
           </li>
@@ -67,12 +69,12 @@ function Header() {
             </Link>
           </li>
           <li className="text-center">
-            <a
-              href="/portfolio"
+            <Link
+              to="/portfolio"
               className="text-black block py-2 md:py-0 hover:text-primary"
             >
               Portfolio
-            </a>
+            </Link>
           </li>
           <li className="text-center">
             <Link
@@ -83,23 +85,21 @@ function Header() {
             </Link>
           </li>
           <li className="text-center">
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="text-black block py-2 md:py-0 hover:text-primary"
             >
               Contact
-            </a>
+            </Link>
           </li>
 
           {/* Request Quote Button */}
           <li>
             <Link to="/request-quote">
-              <button
-                className="bg-primary text-white px-5 py-2 rounded-lg hover:cursor-pointer 
-                       md:mt-0 md:ml-0 mt-6 ml-30"
-              >
-                Request a Quote
-              </button>
+            <button className="bg-primary text-white px-5 py-2 rounded-lg hover:cursor-pointer md:mt-0 md:ml-0 mt-6 ml-[30px]">
+              Request a Quote
+           </button>
+
             </Link>
           </li>
 
