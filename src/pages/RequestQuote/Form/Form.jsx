@@ -20,7 +20,7 @@ function Form() {
 
   return (
     <div className="bg-body">
-      <form className="max-w-4xl mx-auto bg-[#f7f7f7] p-8 space-y-6 text-[#003040] bg-body">
+      <form className="max-w-4xl mx-auto bg-[#f7f7f7] p-8 space-y-6 text-[#000] bg-body">
         {/* Full Name */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
@@ -30,7 +30,7 @@ function Form() {
             <input
               type="text"
               placeholder="First name"
-              className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#003040]/50"
+              className="mt-1 block w-full border border-[#000] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
             />
           </div>
           <div>
@@ -40,7 +40,7 @@ function Form() {
             <input
               type="text"
               placeholder="Last Name"
-              className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#003040]/50"
+              className="mt-1 block w-full border border-[#000] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
             />
           </div>
         </div>
@@ -53,7 +53,7 @@ function Form() {
           <input
             type="text"
             placeholder="Company Name"
-            className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#003040]/50"
+            className="mt-1 block w-full border border-[#000] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
           />
         </div>
 
@@ -65,7 +65,7 @@ function Form() {
           <input
             type="text"
             placeholder="Company Specialization"
-            className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#003040]/50"
+            className="mt-1 block w-full border border-[#000] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
           />
         </div>
 
@@ -77,7 +77,7 @@ function Form() {
           <textarea
             placeholder="What makes your company the best"
             rows="4"
-            className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#003040]/50"
+            className="mt-1 block w-full border border-[#000] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
           />
         </div>
 
@@ -89,18 +89,18 @@ function Form() {
             </label>
             <div className="relative mt-1">
               <div
-                className="cursor-pointer border border-[#003040] rounded-md p-2 placeholder:text-[#003040]/20 flex justify-between items-center"
+                className="cursor-pointer border border-[#000] rounded-md p-2 placeholder:text-[#000]/20 flex justify-between items-center"
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               >
                 <span>{selectedService || "Select an option"}</span>
                 <span>▼</span>
               </div>
               {isDropdownOpen && (
-                <ul className="absolute z-10 bg-white border border-[#003040] rounded-md mt-1 w-full max-h-40 overflow-auto shadow-lg">
+                <ul className="absolute z-10 bg-white border border-[#000]/50 rounded-md mt-1 w-full max-h-40 overflow-auto shadow-lg">
                   {options.map((option, index) => (
                     <li
                       key={index}
-                      className="p-2 hover:bg-[#003040] hover:text-white cursor-pointer"
+                      className="p-2 hover:bg-[#000]/50 hover:text-white cursor-pointer"
                       onClick={() => handleServiceChange(option)}
                     >
                       {option}
@@ -119,7 +119,7 @@ function Form() {
             <input
               type="text"
               placeholder="$50,000 - $100,000"
-              className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#003040]/50"
+              className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
             />
           </div>
         </div>
@@ -132,7 +132,7 @@ function Form() {
           <input
             type="text"
             placeholder="Enter Company target"
-            className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#003040]/50"
+            className="mt-1 block w-full border border-[#000] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
           />
         </div>
 
@@ -144,7 +144,7 @@ function Form() {
           <textarea
             placeholder="Indicate what you expect for the result of the project (file type)"
             rows="3"
-            className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#003040]/50"
+            className="mt-1 block w-full border border-[#000] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
           />
         </div>
 
@@ -156,7 +156,7 @@ function Form() {
           <input
             type="text"
             placeholder="Budget for the project"
-            className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#003040]/50"
+            className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
           />
         </div>
 
@@ -169,7 +169,7 @@ function Form() {
             <input
               type="email"
               placeholder="Email"
-              className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#003040]/50"
+              className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
             />
           </div>
           <div>
@@ -179,7 +179,7 @@ function Form() {
             <input
               type="tel"
               placeholder="Phone Number"
-              className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#003040]/50"
+              className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
             />
           </div>
         </div>
@@ -192,7 +192,7 @@ function Form() {
           <input
             type="text"
             placeholder="Enter time frame"
-            className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#003040]/50"
+            className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
           />
         </div>
 
@@ -200,7 +200,7 @@ function Form() {
         <div className="text-center">
           <button
             type="submit"
-            className="w-full md:w-auto bg-[#136ACD] text-white px-6 py-2 rounded-md transition hover:bg-[#0A5CAD] hover:text-white md:bg-transparent md:border-4 md:border-[#003040] md:text-[#003040] md:hover:bg-[#003040] md:hover:text-white cursor-pointer"
+            className="w-full md:w-auto bg-[#136acd] text-white px-6 py-2 rounded-md transition hover:bg-[#136acd] hover:text-white md:bg-transparent md:border-4 md:border-[#136acd] md:text-[#136acd] md:hover:bg-[#136acd] md:hover:text-white cursor-pointer"
           >
             Send Now
           </button>

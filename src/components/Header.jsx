@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-// import { useState } from "react";
 import logo from "/src/assets/home-img/logo.png";
 import Facebook from "/src/assets/home-img/Facebook.png";
 import LinkedIN from "/src/assets/home-img/linkedin-dark.png";
@@ -26,11 +25,11 @@ function Header() {
   }, [isMobileMenuOpen]);
 
   return (
-    <header className="bg-body text-white pt-5 pb-4 px-11">
+    <header className="bg-body text-white pt-5 pb-4 px-8">
       <nav className="w-full flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <img src={logo} alt="logo" className="h-12 ml-7.5" />
+          <img src={logo} alt="logo" className="h-12 ml-[0] md:ml-[20%]" />
         </div>
 
         {/* Hamburger Menu (Mobile) */}
@@ -96,10 +95,9 @@ function Header() {
           {/* Request Quote Button */}
           <li>
             <Link to="/request-quote">
-            <button className="bg-primary text-white px-5 py-2 rounded-lg hover:cursor-pointer md:mt-0 md:ml-0 mt-6 ml-[30px]">
-              Request a Quote
-           </button>
-
+              <button className="bg-primary text-white px-5 py-2 rounded-lg hover:cursor-pointer mr-3 md:mt-0 md:ml-0 mt-6 ml-[72px]">
+                Request a Quote
+              </button>
             </Link>
           </li>
 

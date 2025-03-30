@@ -7,6 +7,7 @@ import Member1 from "/src/assets/about-img/Member2.png";
 import Member2 from "/src/assets/about-img/Member3.png";
 import Member3 from "/src/assets/about-img/Member4.png";
 import Member4 from "/src/assets/about-img/Member5.png";
+import Member5 from "/src/assets/about-img/Member5.png";
 
 const teamMembers = [
   {
@@ -39,6 +40,12 @@ const teamMembers = [
     profession: "C.E.O",
     image: Member4,
   },
+  {
+    id: 6,
+    name: "SAMMY WHITE", // placeholder
+    profession: "Fullstack",
+    image: Member5,
+  },
 ];
 
 function TeamSection() {
@@ -54,8 +61,8 @@ function TeamSection() {
       </p>
 
       {/* Grid Container */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8">
-        {teamMembers.slice(0, 4).map((member) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+        {teamMembers.map((member) => (
           <div
             key={member.id}
             className="bg-[#1A4E89] text-white shadow-lg rounded-lg p-8 flex flex-col items-center text-center w-60 mx-auto"
@@ -86,38 +93,6 @@ function TeamSection() {
             </div>
           </div>
         ))}
-      </div>
-
-      {/*5th Box */}
-      <div className="flex mt-6">
-        <div className="bg-[#1A4E89] text-white shadow-lg rounded-lg m-2 items-center p-8 flex flex-col text-center w-60">
-          <img
-            src={teamMembers[4].image}
-            alt={teamMembers[4].name}
-            className="w-48 h-42 object-cover border-4 border-gray-300"
-          />
-          <h3 className="mt-4 text-lg font-semibold">{teamMembers[4].name}</h3>
-          <p className="text-gray-300 text-sm mt-2">
-            {teamMembers[4].profession}
-          </p>
-          <div className="flex gap-3 mt-4">
-            <img
-              src={Linkedin}
-              alt="LinkedIn"
-              className="w-3 h-3 cursor-pointer hover:opacity-80"
-            />
-            <img
-              src={Twitter}
-              alt="Twitter"
-              className="w-3 h-3 cursor-pointer hover:opacity-80"
-            />
-            <img
-              src={Facebook}
-              alt="Facebook"
-              className="w-2 h-3 cursor-pointer hover:opacity-80"
-            />
-          </div>
-        </div>
       </div>
     </section>
   );
