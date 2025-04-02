@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import logo from "/src/assets/home-img/logo.png";
 import Facebook from "/src/assets/home-img/Facebook.png";
@@ -51,54 +51,73 @@ function Header() {
             <p>in Every Byte</p>
           </div>
           <li className="text-center">
-            {/* <Link
+            <NavLink
               to="/"
-              className="text-black block pt-2 pb-2 hover:text-primary"
-            > */}
-            <Link to="/" className="text-black block py-2 hover:text-primary">
+              className={({ isActive }) =>
+                isActive
+                  ? "text-blue-500 font-bold block py-2 md:py-0"
+                  : "text-black block py-2 md:py-0 hover:text-primary"
+              }
+            >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li className="text-center">
-            <Link
+            <NavLink
               to="/service"
-              className="text-black block py-2 md:py-0 hover:text-primary"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-blue-500 font-bold block py-2 md:py-0"
+                  : "text-black block py-2 md:py-0 hover:text-primary"
+              }
             >
               Services
-            </Link>
+            </NavLink>
           </li>
           <li className="text-center">
-            <Link
+            <NavLink
               to="/portfolio"
-              className="text-black block py-2 md:py-0 hover:text-primary"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-blue-500 font-bold block py-2 md:py-0"
+                  : "text-black block py-2 md:py-0 hover:text-primary"
+              }
             >
               Portfolio
-            </Link>
+            </NavLink>
           </li>
           <li className="text-center">
-            <Link
+            <NavLink
               to="/about"
-              className="text-black block py-2 md:py-0 hover:text-primary"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-blue-500 font-bold block py-2 md:py-0"
+                  : "text-black block py-2 md:py-0 hover:text-primary"
+              }
             >
               About Us
-            </Link>
+            </NavLink>
           </li>
           <li className="text-center">
-            <Link
+            <NavLink
               to="/contact"
-              className="text-black block py-2 md:py-0 hover:text-primary"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-blue-500 font-bold block py-2 md:py-0"
+                  : "text-black block py-2 md:py-0 hover:text-primary"
+              }
             >
               Contact
-            </Link>
+            </NavLink>
           </li>
 
           {/* Request Quote Button */}
           <li>
-            <Link to="/request-quote">
+            <NavLink to="/request-quote">
               <button className="bg-primary text-white px-5 py-2 rounded-lg hover:cursor-pointer mr-3 md:mt-0 md:ml-0 mt-6 ml-[72px]">
                 Request a Quote
               </button>
-            </Link>
+            </NavLink>
           </li>
 
           {/* Social Media Icons (Mobile Only) */}

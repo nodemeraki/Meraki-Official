@@ -4,7 +4,7 @@ function HeroSection() {
   return (
     <section className="h-[48vh] md:h-[85vh] sm:h-[40vh] bg-body">
       <div
-        className="h-[98%] w-[88vw] m-auto rounded-sm md:rounded-md overflow-hidden bg-cover bg-center font-homeHero font-lexend shadow-[0_0_10px_4px_rgba(0,0,0,0.2)]"
+        className="h-[98%] w-[88vw] m-auto rounded-xl md:rounded-2xl overflow-hidden bg-cover bg-center font-homeHero font-lexend shadow-[0_0_10px_4px_rgba(0,0,0,0.2)]"
         style={{ backgroundImage: `url(${HeroH})` }}
       >
         <h1 className="max-w-[20ch] text-[#040303] text-sm uppercase font-bold md:text-[3.5rem] mb-[4%] ml-[10%] md:ml-[11%] mt-25 leading-6 md:leading-20">
