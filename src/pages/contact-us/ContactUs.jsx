@@ -1,7 +1,7 @@
-import Header from "/src/components/Header";
-import Footer from "/src/components/Footer";
-import ContactHeader from "./ContactHeader";
-import ContactForm from "./ContactForm";
+import Header from "/src/components/Header.jsx";
+import Footer from "/src/components/Footer.jsx";
+import ContactHeader from "./ContactHeader.jsx";
+import ContactForm from "./ContactForm.jsx";
 
 const ContactUs = () => {
   return (

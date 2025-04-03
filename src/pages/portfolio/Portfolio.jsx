@@ -5,12 +5,14 @@ import Showcase from "./Showcase";
 
 const Portfolio = () => {
   return (
-    <main className="bg-body">
+    <>
       <Header />
-      <Hero />
-      <Showcase />
+      <main className="bg-body">
+        <Hero />
+        <Showcase />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 };
 

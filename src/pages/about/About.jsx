@@ -1,8 +1,8 @@
-import Header from "/src/components/Header";
-import HeroSection from "/src/pages/About/HeroSection/HeroSection";
-import PrinciplesSection from "/src/pages/About/PrincipleSec/principle";
-import TeamSection from "/src/pages/About/TeamSection/TeamSection";
-import Footer from "/src/components/Footer";
+import Header from "/src/components/Header.jsx";
+import HeroSection from "./HeroSection.jsx";
+import PrinciplesSection from "./PrinciplesSection.jsx";
+import TeamSection from "./TeamSection.jsx";
+import Footer from "/src/components/Footer.jsx";
 
 function About() {
   return (

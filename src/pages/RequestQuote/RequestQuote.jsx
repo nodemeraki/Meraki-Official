@@ -1,8 +1,7 @@
-import React from "react";
-import Header from "/src/components/Header";
-import Footer from "/src/components/Footer";
-import Hero from "/src/pages/RequestQuote/Hero/Hero";
-import Form from "/src/pages/RequestQuote/Form/Form";
+import Header from "/src/components/Header.jsx";
+import Footer from "/src/components/Footer.jsx";
+import Hero from "/src/pages/RequestQuote/Hero/Hero.jsx";
+import Form from "/src/pages/RequestQuote/Form/Form.jsx";
 
 function RequestQuote() {
   return (

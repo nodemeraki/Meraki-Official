@@ -1,16 +1,16 @@
-import Header from "/src/components/Header";
-import HeroSection from "/src/pages/Homepage/HeroSection/HeroSection";
-import Trust from "/src/pages/Homepage/Trust/Trust";
-import Numerals from "./Numerals/Numerals";
-import WorkDone from "./workDoneRIght/WorkDone";
-import Work from "./HowWeWork/Work";
-import Clients from "./Clients/Clients";
-import Footer from "/src/components/Footer";
-import SubscribeBox from "./SubscribeBox/SubscribeBox";
+import Header from "/src/components/Header.jsx";
+import HeroSection from "/src/pages/Homepage/HeroSection/HeroSection.jsx";
+import Trust from "/src/pages/Homepage/Trust/Trust.jsx";
+import Numerals from "./Numerals/Numerals.jsx";
+import WorkDone from "./workDoneRIght/WorkDone.jsx";
+import Work from "./HowWeWork/Work.jsx";
+import Clients from "./Clients/Clients.jsx";
+import Footer from "/src/components/Footer.jsx";
+import SubscribeBox from "./SubscribeBox/SubscribeBox.jsx";
 
 function Homepage() {
   return (
-    <div>
+    <>
       <Header />
       <HeroSection />
       <Trust />
@@ -20,7 +20,7 @@ function Homepage() {
       <Clients />
       <SubscribeBox />
       <Footer />
-    </div>
+    </>
   );
 }
 

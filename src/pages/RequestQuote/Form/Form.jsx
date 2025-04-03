@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Form() {
   const [selectedService, setSelectedService] = useState("");
@@ -20,7 +20,7 @@ function Form() {
 
   return (
     <div className="bg-body">
-      <form className="max-w-4xl mx-auto bg-[#f7f7f7] p-8 space-y-6 text-[#000] bg-body">
+      <form className="max-w-4xl mx-auto p-8 space-y-6 text-[#000] bg-body">
         {/* Full Name */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>

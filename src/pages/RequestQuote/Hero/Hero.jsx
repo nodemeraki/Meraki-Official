@@ -1,4 +1,3 @@
-import React from "react";
 import HeroRq from "/src/assets/Request/hero.jpg";
 
 function Hero() {
