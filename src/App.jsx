@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./utils/ScrollToTop";
-import Homepage from "./pages/Homepage/Homepage";
-import About from "./pages/about/About";
-import Service from "./pages/Service/Service";
-import RequestQuote from "./pages/RequestQuote/RequestQuote";
-import Portfolio from "./pages/Portfolio/Portfolio";
-import ProjectCaseStudy from "./pages/ProjectCaseStudy/ProjectCaseStudy";
-import ContactUs from "./pages/Contact-us/ContactUs";
+import Homepage from "./pages/Homepage/Homepage.jsx";
+import About from "./pages/about/About.jsx";
+import Service from "./pages/Service/Service.jsx";
+import RequestQuote from "./pages/RequestQuote/RequestQuote.jsx";
+import Portfolio from "./pages/Portfolio/Portfolio.jsx";
+import ProjectCaseStudy from "./pages/ProjectCaseStudy/ProjectCaseStudy.jsx";
+import ContactUs from "./pages/Contact-us/ContactUs.jsx";
 import "./index.css";
 
 function App() {
