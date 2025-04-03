@@ -1,4 +1,3 @@
-import React from "react";
 const Circle = "/assets/about-img/circle.png";
 // const Circle = new URL("../../assets/about-img/circle.png", import.meta.url)
 //   .href;

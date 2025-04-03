@@ -42,7 +42,7 @@ const PlanCard = ({ plan }) => {
         <p>Timeline: {plan.timeline}</p>
 
         {/* This links to Request a quote */}
-        <Link>
+        <Link to="/request-quote">
           <button
             className={`my-10 border-[5px] py-3 px-10 text-xl transform duration-300 rounded-[44px] ${
               plan.title === "Sprint"

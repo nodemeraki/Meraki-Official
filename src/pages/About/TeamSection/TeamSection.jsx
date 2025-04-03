@@ -1,4 +1,3 @@
-import React from "react";
 import Linkedin from "/src/assets/about-img/aboutlink.png";
 import Twitter from "/src/assets/about-img/abouttwit.png";
 import Facebook from "/src/assets/about-img/aboutfaceb.png";
