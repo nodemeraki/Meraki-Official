@@ -24,21 +24,29 @@ function Form() {
         {/* Full Name */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label className="block text-sm font-medium text-black">
+            <label
+              htmlFor="first-name"
+              className="block text-sm font-medium text-black"
+            >
               Full Name
             </label>
             <input
               type="text"
               placeholder="First name"
+              id="first-name"
               className="mt-1 block w-full border border-[#000] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-black">
+            <label
+              htmlFor="last-name"
+              className="block text-sm font-medium text-black"
+            >
               Last Name
             </label>
             <input
               type="text"
+              id="last-name"
               placeholder="Last Name"
               className="mt-1 block w-full border border-[#000] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
             />
@@ -47,11 +55,15 @@ function Form() {
 
         {/* Company Name */}
         <div>
-          <label className="block text-sm font-medium text-black">
+          <label
+            htmlFor="company-name"
+            className="block text-sm font-medium text-black"
+          >
             I Work with company name called
           </label>
           <input
             type="text"
+            id="company-name"
             placeholder="Company Name"
             className="mt-1 block w-full border border-[#000] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
           />
@@ -59,11 +71,15 @@ function Form() {
 
         {/* Specialization */}
         <div>
-          <label className="block text-sm font-medium text-black">
+          <label
+            htmlFor="specialization"
+            className="block text-sm font-medium text-black"
+          >
             WE Specialize in
           </label>
           <input
             type="text"
+            id="specialization"
             placeholder="Company Specialization"
             className="mt-1 block w-full border border-[#000] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
           />
@@ -113,11 +129,15 @@ function Form() {
 
           {/* Price Range */}
           <div>
-            <label className="block text-sm font-medium text-black">
+            <label
+              htmlFor="price"
+              className="block text-sm font-medium text-black"
+            >
               Price Range
             </label>
             <input
               type="text"
+              id="price"
               placeholder="$50,000 - $100,000"
               className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
             />
@@ -126,11 +146,15 @@ function Form() {
 
         {/* Target */}
         <div>
-          <label className="block text-sm font-medium text-black">
+          <label
+            htmlFor="target"
+            className="block text-sm font-medium text-black"
+          >
             Our target is/are
           </label>
           <input
             type="text"
+            id="target"
             placeholder="Enter Company target"
             className="mt-1 block w-full border border-[#000] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
           />
@@ -150,11 +174,15 @@ function Form() {
 
         {/* Budget */}
         <div>
-          <label className="block text-sm font-medium text-black">
+          <label
+            htmlFor="budget"
+            className="block text-sm font-medium text-black"
+          >
             My Budget
           </label>
           <input
             type="text"
+            id="budget"
             placeholder="Budget for the project"
             className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
           />
@@ -163,21 +191,29 @@ function Form() {
         {/* Contact Information */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label className="block text-sm font-medium text-black">
+            <label
+              htmlFor="contact-email"
+              className="block text-sm font-medium text-black"
+            >
               You can contact me at
             </label>
             <input
               type="email"
+              id="contact-email"
               placeholder="Email"
               className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-black">
+            <label
+              htmlFor="contact"
+              className="block text-sm font-medium text-black"
+            >
               Or call me
             </label>
             <input
               type="tel"
+              id="contact"
               placeholder="Phone Number"
               className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
             />
@@ -186,11 +222,15 @@ function Form() {
 
         {/* Time Frame */}
         <div>
-          <label className="block text-sm font-medium text-black">
+          <label
+            htmlFor="time-frame"
+            className="block text-sm font-medium text-black"
+          >
             Time Frame
           </label>
           <input
             type="text"
+            id="time-frame"
             placeholder="Enter time frame"
             className="mt-1 block w-full border border-[#003040] rounded-md shadow-sm p-2 focus:outline-none placeholder:text-[#000]/50"
           />
