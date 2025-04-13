@@ -54,7 +54,9 @@ const ContactForm = () => {
                   id="first-name"
                   name="firstName"
                   placeholder="First name"
-                  className=" border border-[#044358] px-2.5 max-w-[435px] w-full min-h-[78px]"
+                  className={`border border-[#044358] px-2.5 max-w-[435px] w-full min-h-[78px] ${
+                    ErrorMessage ? "border-red-700" : ""
+                  }`}
                 />
                 <ErrorMessage
                   name="firstName"
@@ -76,7 +78,9 @@ const ContactForm = () => {
                   id="last-name"
                   name="lastName"
                   placeholder="Last name"
-                  className="border border-[#044358] px-2.5 max-w-[435px] w-full min-h-[78px]"
+                  className={`border border-[#044358] px-2.5 max-w-[435px] w-full min-h-[78px] ${
+                    ErrorMessage ? "border-red-700" : ""
+                  }`}
                 />
                 <ErrorMessage
                   name="lastName"
@@ -98,7 +102,9 @@ const ContactForm = () => {
                   type="email"
                   name="email"
                   placeholder="email"
-                  className="border border-[#044358] px-2.5 max-w-[435px] w-full min-h-[78px]"
+                  className={`border border-[#044358] px-2.5 max-w-[435px] w-full min-h-[78px] ${
+                    ErrorMessage ? "border-red-700" : ""
+                  }`}
                 />
                 <ErrorMessage
                   name="email"
@@ -119,7 +125,9 @@ const ContactForm = () => {
                   id="tel-num"
                   name="phone"
                   placeholder="Phone number"
-                  className="border border-[#044358] px-2.5 max-w-[435px] w-full min-h-[78px]"
+                  className={`border border-[#044358] px-2.5 max-w-[435px] w-full min-h-[78px] ${
+                    ErrorMessage ? "border-red-700" : ""
+                  }`}
                 />
                 <ErrorMessage
                   name="phone"
@@ -133,7 +141,9 @@ const ContactForm = () => {
             <div>
               <label
                 htmlFor="user-message"
-                className="block font-light text-[21px] leading-[24.61px] mb-2"
+                className={`block font-light text-[21px] leading-[24.61px] mb-2 ${
+                  ErrorMessage ? "border-red-700" : ""
+                }`}
               >
                 Message
               </label>
@@ -142,7 +152,9 @@ const ContactForm = () => {
                 id="user-message"
                 name="message"
                 placeholder="Message content"
-                className="border border-[#044358] px-2.5 max-w-[922px] w-full min-h-[273px]"
+                className={`border border-[#044358] px-2.5 max-w-[922px] w-full min-h-[273px] ${
+                  ErrorMessage ? "border-red-700" : ""
+                }`}
               />
               <ErrorMessage
                 name="message"
@@ -153,9 +165,9 @@ const ContactForm = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="border rounded-[10px] border-[#044358] max-w-[919px] w-full h-[85px] bg-[#136ACD] text-[#ffffff] font-light text-[28px] leading-[33.6px]"
+              className="border-none rounded-[10px] border-[#044358] max-w-[919px] w-full h-[85px] bg-[#136ACD] text-[#ffffff] font-light text-[28px] leading-[33.6px] cursor-pointer outline-0"
             >
-              Submit
+              {isSubmitting ? "Submitting..." : "Submit"}
             </button>
           </Form>
         )}

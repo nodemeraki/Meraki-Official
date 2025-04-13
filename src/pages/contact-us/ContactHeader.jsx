@@ -3,14 +3,14 @@ import { MapPin, Star, Mail, PhoneIncoming } from "lucide-react";
 
 const ContactHeader = () => {
   return (
-    <section>
+    <section className="max-w-[90%] mx-auto">
       <img src={TelephoneImg} alt="A picture of a blue telephone with wire" />
 
       {/* Holds the three containers */}
       <div className="max-w-[1035px] w-full min-h-[244px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 my-10 md:my-16 px-7">
         <div className="flex flex-row md:flex-col items-center gap-3.5 md:gap-2">
           <div className="border-2 border-primary h-[43px] md:h-[63px] w-[43px] md:w-[63px] rounded-full flex justify-center items-center md:mb-7">
-            <div className="relative sm:w-5 sm:h-5 w-6 h-6 md:w-10 md:h-10 border border-primary">
+            <div className="relative sm:w-5 sm:h-5 w-6 h-6 md:w-8 md:h-8 ">
               <MapPin
                 // size={32}
                 className="fill-[#044358] text-[#044358] absolute w-full h-full"

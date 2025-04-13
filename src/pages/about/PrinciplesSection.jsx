@@ -47,7 +47,7 @@ function PrinciplesSection() {
       </h2>
 
       {/* Grid Container */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 md:px-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 px-9 md:px-16 max-w-[90%] mx-auto">
         {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 md:px-16"> */}
         {principles.map((principle, index) =>
           principle.image ? (
@@ -55,7 +55,7 @@ function PrinciplesSection() {
               <img
                 src={principle.image}
                 alt="Principle Representation"
-                className="w-48 h-48 object-cover rounded-full border border-gray-300"
+                className="w-55 h-55 object-cover rounded-full"
               />
             </div>
           ) : (

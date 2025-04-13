@@ -60,7 +60,7 @@ function TeamSection() {
       </p>
 
       {/* Grid Container */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 mt-8">
         {teamMembers.map((member) => (
           <div
             key={member.id}

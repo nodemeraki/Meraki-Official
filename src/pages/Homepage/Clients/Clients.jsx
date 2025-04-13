@@ -90,7 +90,7 @@ const Clients = () => {
       <div className="relative w-[90%] mx-auto">
         <Swiper
           modules={[Navigation, Pagination]}
-          spaceBetween={30}
+          spaceBetween={20}
           slidesPerView={1}
           pagination={{ clickable: true }}
           breakpoints={{
@@ -120,12 +120,12 @@ const Clients = () => {
         </Swiper>
 
         {/* {navigation arrows at the bottom} */}
-        <div className="flex md:justify-center justify-end items-center mt-6 gap-3">
+        <div className="flex md:justify-center justify-end items-center gap-3">
           <button className="custom-prev bg-secondary hover:bg-[#5EF960] text-white p-2 w-8 h-8 rounded-full flex place-items-center cursor-pointer transform duration-300">
-            <ArrowLeft size={20} strokeWidth={3} />
+            <ArrowLeft size={15} strokeWidth={3} />
           </button>
           <button className="custom-next bg-secondary hover:bg-[#5EF960] text-white p-2 w-8 h-8 rounded-full flex place-items-center cursor-pointer transform duration-300">
-            <ArrowRight size={20} strokeWidth={3} />
+            <ArrowRight size={15} strokeWidth={3} />
           </button>
         </div>
       </div>

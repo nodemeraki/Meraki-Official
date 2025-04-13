@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import logo from "/src/assets/home-img/logo.png";
 import Facebook from "/src/assets/home-img/Facebook.png";
 import LinkedIN from "/src/assets/home-img/linkedin-dark.png";
@@ -13,16 +13,19 @@ function Header() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const closeMobileMenu = (e) => {
-    if (isMobileMenuOpen && !e.target.closest("nav")) {
-      setIsMobileMenuOpen(false);
-    }
-  };
+  const closeMobileMenu = useCallback(
+    (e) => {
+      if (isMobileMenuOpen && !e.target.closest("nav")) {
+        setIsMobileMenuOpen(false);
+      }
+    },
+    [isMobileMenuOpen]
+  );
 
   useEffect(() => {
     document.addEventListener("click", closeMobileMenu);
     return () => document.removeEventListener("click", closeMobileMenu);
-  }, [isMobileMenuOpen]);
+  }, [closeMobileMenu]);
 
   return (
     <header className="bg-body text-white pt-5 pb-4 px-8">
